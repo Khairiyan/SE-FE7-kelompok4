@@ -322,7 +322,7 @@ function eat(snake, apples) {
       if (snake.score % 5 == 0) {
         snake.speed -= 30;
         snake.level++;
-        if (snake.level == 6) {
+        if (snake.level > 5) {
           alert("winner");
           var audio = new Audio("./assets/sound/winner.mp3");
           audio.play();
